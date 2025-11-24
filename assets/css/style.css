@@ -114,7 +114,7 @@ body{
 .mission{max-width:1100px;margin:22px auto;padding:20px}
 .mission-inner{display:flex;gap:18px;align-items:flex-start}
 .mission-inner > div{background:var(--card);padding:16px;border-radius:10px;flex:1}
-
+.comment{max-width:1100px;margin:22px auto;padding:20px}
 .testimonials{max-width:1100px;margin:22px auto;padding:20px}
 .testimonials-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
 .testimonial{background:var(--card);padding:14px;border-radius:10px;box-shadow:0 6px 18px rgba(2,6,23,0.04)}
