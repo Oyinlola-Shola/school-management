@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Dashboard · School Management</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <meta name="description" content="Admin dashboard for School Management">
+  <!-- Dashboard styles live in assets/style.css -->
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="../index.html">SchoolMS</a>
+      <div class="nav-list">
+        <a href="../index.html">Home</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="app">
+    <aside class="sidebar">
+      <h2>Admin</h2>
+      <ul>
+        <li><a class="active" href="#">Dashboard</a></li>
+        <li><a href="#students">Students</a></li>
+        <li><a href="#teachers">Upload Resutls</a></li>
+        <li><a href="#courses">Upload Document</a></li>
+        <!-- <li><a href="#attendance">Attendance</a></li> -->
+        <li><a href="#reports">Reports</a></li>
+      </ul>
+      <div style="margin-top:12px">
+        <strong class="small">Quick Links</strong>
+        <div style="margin-top:8px;display:flex;flex-direction:column;gap:8px">
+          <a class="btn" href="#">New Student</a>
+          <a class="btn" href="#">Export CSV</a>
+        </div>
+      </div>
+    </aside>
+
+    <section>
+      <div class="topbar">
+        <div>
+          <h2 style="margin:0">Dashboard</h2>
+          <p class="small">Overview of school activity</p>
+        </div>
+        <div class="search">
+          <input id="search" placeholder="Search students...">
+          <a class="btn" href="#">+ New</a>
+        </div>
+      </div>
+
+      <div class="cards">
+        <div class="card"><h3>Students</h3><p id="stat-students">—</p></div>
+        <div class="card"><h3>Teachers</h3><p id="stat-teachers">—</p></div>
+        <div class="card"><h3>Classes</h3><p id="stat-classes">—</p></div>
+        <div class="card"><h3>Attendance Today</h3><p id="stat-attendance">—</p></div>
+      </div>
+      <div class="dashboard-grid">
+        <div class="main-column">
+          <div class="panel" id="students">
+            <h3 style="margin-top:0">Recent Students</h3>
+            <div style="overflow:auto">
+              <table id="students-table">
+                <thead>
+                  <tr><th>Name</th><th>Class</th><th>Age</th><th>Status</th></tr>
+                </thead>
+                <tbody>
+                  <!-- Rendered by script -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="panel" id="recent-activity">
+            <h3 style="margin-top:0">Recent Activity</h3>
+            <div class="activity-list" id="activity-list">
+              <!-- Populated by script -->
+            </div>
+          </div>
+        </div>
+
+        <aside class="right-column">
+          <div class="panel">
+            <h3 style="margin-top:0">Grade Snapshot</h3>
+            <div id="grade-chart-dash" style="height:140px;display:flex;align-items:end;gap:8px;padding-top:12px">
+              <!-- Simple bars rendered by script -->
+            </div>
+          </div>
+
+          <div class="panel" id="notifications" style="margin-top:12px">
+            <h3 style="margin-top:0">Notifications</h3>
+            <!-- Populated by script -->
+          </div>
+
+          <div class="panel" style="margin-top:12px">
+            <h3 style="margin-top:0">Quick Links</h3>
+            <div class="quick-links" id="quick-links">
+              <!-- Populated by script -->
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <script src="../assets/script.js"></script>
+</body>
+</html>

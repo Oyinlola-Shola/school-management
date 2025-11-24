@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Abstract educational background">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#0b1220" stop-opacity="0.75"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" x2="1">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="600" fill="url(#bg)"/>
+  <!-- subtle geometric forms for a professional look -->
+  <g opacity="0.12" fill="#fff">
+    <rect x="40" y="60" width="360" height="380" rx="20"/>
+    <rect x="520" y="80" width="620" height="380" rx="24"/>
+  </g>
+  <g transform="translate(120,120)">
+    <path d="M0 260 Q120 200 240 260 T480 260" fill="none" stroke="url(#accent)" stroke-width="8" stroke-linecap="round" opacity="0.18"/>
+    <circle cx="560" cy="80" r="48" fill="url(#accent)" opacity="0.12"/>
+  </g>
+  <g transform="translate(60,420)" fill="#fff" opacity="0.06">
+    <rect x="0" y="0" width="180" height="8" rx="4"/>
+    <rect x="200" y="0" width="120" height="8" rx="4"/>
+  </g>
+  <text x="80" y="520" font-family="Segoe UI, Roboto, Arial" font-size="34" fill="#ffffffcc">School Management</text>
+</svg>
